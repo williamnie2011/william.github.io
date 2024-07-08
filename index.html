@@ -1,2 +1,51 @@
-<html><body>welcome to cpp</html></body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>脚本市场</title>
+    <link rel="stylesheet" href="index.css">
+ </head>   
+<body>
+    
+    <div class="form-container">
+        <h2>注册</h2>
+        <form id="registerForm">
+            <label for="registerEmail">电子邮箱:</label>
+            <input type="text" id="registerEmail" name="email">
+            
+            <label for="registerPassword">密码:</label>
+            <input type="password" id="registerPassword" name="password">
+            
+            <button type="submit">创建账户</button>
+        </form>
+        
+        <h2>登录</h2>
+        <form id="loginForm">
+            <label for="loginEmail">电子邮箱:</label>
+            <input type="text" id="loginEmail" name="email">
+            
+            <label for="loginPassword">密码:</label>
+            <input type="password" id="loginPassword" name="password">
+            
+            <button type="submit">登录</button>
+        </form>
+    </div>
 
+    <script>
+        // 请注意，这里的代码仅用于演示，不包括实际的用户验证、注册或网络通讯。
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 在这里添加实际的注册代码。例如，AJAX请求。
+            alert('注册功能尚未实现。');
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 在这里添加实际的登录代码。例如，AJAX请求。
+            alert('登录功能尚未实现。');
+        });
+    </script>
+
+</body>
+</html>
